@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<background>
+  <starttime>
+    <year>2010</year>
+    <month>01</month>
+    <day>01</day>
+    <hour>00</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+  <static>
+    <duration>60.0</duration>
+    <file>/usr/share/backgrounds/abstract/Flow.png</file>
+  </static>
+  <transition type="overlay">
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/abstract/Flow.png</from>
+    <to>/usr/share/backgrounds/abstract/Gulp.png</to>
+  </transition>
+  <static>
+    <duration>60.0</duration>
+    <file>/usr/share/backgrounds/abstract/Gulp.png</file>
+  </static>
+  <transition type="overlay">
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/abstract/Gulp.png</from>
+    <to>/usr/share/backgrounds/abstract/Silk.png</to>
+  </transition>
+  <static>
+    <duration>60.0</duration>
+    <file>/usr/share/backgrounds/abstract/Silk.png</file>
+  </static>
+  <transition type="overlay">
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/abstract/Silk.png</from>
+    <to>/usr/share/backgrounds/abstract/Spring.png</to>
+  </transition>
+  <static>
+    <duration>60.0</duration>
+    <file>/usr/share/backgrounds/abstract/Spring.png</file>
+  </static>
+  <transition type="overlay">
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/abstract/Spring.png</from>
+    <to>/usr/share/backgrounds/abstract/Waves.png</to>
+  </transition>
+  <static>
+    <duration>60.0</duration>
+    <file>/usr/share/backgrounds/abstract/Waves.png</file>
+  </static>
+  <transition type="overlay">
+    <duration>1.0</duration>
+    <from>/usr/share/backgrounds/abstract/Waves.png</from>
+    <to>/usr/share/backgrounds/abstract/Flow.png</to>
+  </transition>
+</background>

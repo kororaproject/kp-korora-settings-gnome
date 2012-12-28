@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Name=Switch Between Shell and Fallback Desktops
+X-GNOME-FullName=Switch Between Shell and Fallback Desktops
+Comment=Switch between the GNOME 3 Shell and Fallback interfaces.
+Exec=switch-gnome-desktop.sh
+Terminal=false
+Type=Application
+StartupNotify=false
+Icon=
+Categories=GNOME;System
+OnlyShowIn=GNOME
