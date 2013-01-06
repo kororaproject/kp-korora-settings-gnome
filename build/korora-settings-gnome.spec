@@ -1,16 +1,19 @@
 Summary: Korora configs for GNOME
 Name:    korora-settings-gnome
-Version: 0.5
-Release: 2%{?dist}
+Version: 0.6
+Release: 1%{?dist}
 
 Group:   System Environment/Base
 License: GPLv3+
-Url:     http://korora.org
-Source0: %{name}-%{version}.tar.gz
+Url:     http://kororaproject.org
+Source0: %{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 #BuildArch: noarch
 
 Requires: coreutils sed util-linux glib2 GConf2 gdm yelp
+
+Obsoletes: kororaa-settings-gnome
+Provides: kororaa-settings-gnome
 
 %description
 %{summary}.
@@ -112,6 +115,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 %{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Thu Oct 25 2012 Chris Smart <csmart@kororaproject.org> 0.6-1
+- Korora 18 build.
+
 * Sat Jun 30 2012 Chris Smart <chris@kororaa.org> 0.5-2
 - Added settings for Cinnamon.
 
