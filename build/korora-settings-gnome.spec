@@ -1,25 +1,25 @@
-Summary: Korora configs for GNOME
-Name:    korora-settings-gnome
-Version: 0.6
-Release: 1%{?dist}
+Summary:    Korora configs for GNOME
+Name:       korora-settings-gnome
+Version:    0.6
+Release:    1%{?dist}
 
-Group:   System Environment/Base
-License: GPLv3+
-Url:     http://kororaproject.org
-Source0: %{name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Group:      System Environment/Base
+License:    GPLv3+
+Url:        http://kororaproject.org
+Source0:    %{name}-%{version}.tar.gz
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 #BuildArch: noarch
 
-Requires: coreutils sed util-linux glib2 GConf2 gdm yelp
+Requires:   coreutils sed util-linux glib2 GConf2 gdm yelp
 
-Obsoletes: kororaa-settings-gnome
-Provides: kororaa-settings-gnome
+Obsoletes:  kororaa-settings-gnome
+Provides:   kororaa-settings-gnome
 
 %description
 %{summary}.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 
