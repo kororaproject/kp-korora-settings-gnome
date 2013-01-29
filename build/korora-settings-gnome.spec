@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.6
-Release:    1%{?dist}.1
+Release:    1%{?dist}.2
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -41,8 +41,8 @@ install -m 0644 %{_builddir}/%{name}-%{version}/applications/* %{buildroot}/usr/
 install -m 0644 %{_builddir}/%{name}-%{version}/applications-korora.menu %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
 cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/defaults/profile/prefs-gnome.js
 #install -m 0644 %{_builddir}/%{name}-%{version}/background-slideshow.xml %{buildroot}/%{_datadir}/backgrounds/abstract/background-1.xml
-install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.sh %{buildroot}/%{_bindir}/switch-gnome-desktop.sh
-install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.desktop %{buildroot}/%{_datadir}/applications/switch-gnome-desktop.desktop
+#install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.sh %{buildroot}/%{_bindir}/switch-gnome-desktop.sh
+#install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.desktop %{buildroot}/%{_datadir}/applications/switch-gnome-desktop.desktop
 #ln -sf /usr/share/applications/switch-gnome-desktop.desktop %{buildroot}/etc/skel/Desktop/switch-gnome-desktop.desktop
 
 #gnome override
@@ -108,8 +108,8 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 /usr/local/share/applications
 #%{_datadir}/backgrounds/abstract/background-1.xml
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
-%{_bindir}/switch-gnome-desktop.sh
-%{_datadir}/applications/switch-gnome-desktop.desktop
+#%{_bindir}/switch-gnome-desktop.sh
+#%{_datadir}/applications/switch-gnome-desktop.desktop
 #%{_sysconfdir}/skel/Desktop/switch-gnome-desktop.desktop
 %{_sysconfdir}/skel/Desktop/Help-gnome.desktop
 %{_datadir}/xsessions/gnome-fallback.desktop
