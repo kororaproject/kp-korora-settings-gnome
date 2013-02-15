@@ -1,5 +1,6 @@
 [org.gnome.desktop.background]
 show-desktop-icons=true
+picture-uri="file:///usr/share/backgrounds/spherical-cow/default/spherical-cow.xml"
 
 [org.gnome.desktop.interface]
 buttons-have-icons=true

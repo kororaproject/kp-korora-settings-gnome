@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.6
-Release:    1%{?dist}.2
+Release:    2%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -115,6 +115,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 %{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Fri Feb 15 2013 Chris Smart <firnsy@kororaproject.org> 0.6-2
+- Added background picture-uri preference."
+
 * Thu Oct 25 2012 Chris Smart <csmart@kororaproject.org> 0.6-1
 - Korora 18 build.
 
