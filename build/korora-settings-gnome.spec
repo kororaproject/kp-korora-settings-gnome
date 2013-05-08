@@ -94,8 +94,8 @@ ln -sf prefs-gnome.js prefs.js
 #load gnome changes
 glib-compile-schemas /usr/share/glib-2.0/schemas
 
-#Set yelp to executable to remove gnome warning on shortcut
-chmod a+x /usr/share/applications/gnome-yelp.desktop
+#set yelp to executable to remove gnome warning on shortcut
+#chmod a+x /usr/share/applications/gnome-yelp.desktop
 
 %postun
 #load gnome changes
