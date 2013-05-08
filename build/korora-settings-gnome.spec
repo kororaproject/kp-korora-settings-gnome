@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.6
-Release:    2%{?dist}
+Version:    0.7
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -49,11 +49,12 @@ cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/fire
 install -m 0644 %{_builddir}/%{name}-%{version}/org.korora.gschema.override %{buildroot}%{_datadir}/glib-2.0/schemas/org.korora.gschema.override
 
 #gnome fallback
-install -m 0644 -D %{_builddir}/%{name}-%{version}/gnome-fallback.desktop %{buildroot}%{_datadir}/xsessions/gnome-fallback.desktop
+#install -m 0644 -D %{_builddir}/%{name}-%{version}/gnome-fallback.desktop %{buildroot}%{_datadir}/xsessions/gnome-fallback.desktop
 
-cd %{buildroot}/
-ln -sf /usr/share/applications/gnome-yelp.desktop %{buildroot}/%{_sysconfdir}/skel/Desktop/Help-gnome.desktop
-cd -
+# help icon on desktop
+#cd %{buildroot}/
+#ln -sf /usr/share/applications/gnome-yelp.desktop %{buildroot}/%{_sysconfdir}/skel/Desktop/Help-gnome.desktop
+#cd -
 
 %clean
 rm -rf %{buildroot}
