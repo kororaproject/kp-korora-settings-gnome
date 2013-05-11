@@ -112,8 +112,8 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 #%{_bindir}/switch-gnome-desktop.sh
 #%{_datadir}/applications/switch-gnome-desktop.desktop
 #%{_sysconfdir}/skel/Desktop/switch-gnome-desktop.desktop
-%{_sysconfdir}/skel/Desktop/Help-gnome.desktop
-%{_datadir}/xsessions/gnome-fallback.desktop
+#%{_sysconfdir}/skel/Desktop/Help-gnome.desktop
+#%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
 * Fri Feb 15 2013 Chris Smart <firnsy@kororaproject.org> 0.6-2
