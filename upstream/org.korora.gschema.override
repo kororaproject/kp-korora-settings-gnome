@@ -15,10 +15,10 @@ menus-have-icons=true
 computer-icon-visible=true
 
 [org.gnome.nautilus.desktop]
-home-icon-visible=true
+home-icon-visible=false
 
 [org.gnome.nautilus.desktop]
-trash-icon-visible=true
+trash-icon-visible=false
 
 [org.gnome.nautilus.preferences]
 always-use-location-entry=true
