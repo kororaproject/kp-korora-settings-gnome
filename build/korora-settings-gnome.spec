@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    1%{?dist}
+Release:    1%{?dist}.1
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -29,7 +29,7 @@ mkdir -p %{buildroot}%{_datadir}/applications/
 mkdir -p %{buildroot}/etc/skel/Desktop
 mkdir -p %{buildroot}/usr/local/share/applications/
 mkdir -p %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged
-mkdir -p %{buildroot}%{_libdir}/firefox/defaults/profile
+mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
 #mkdir -p %{buildroot}%{_datadir}/backgrounds/abstract
 mkdir -p %{buildroot}%{_datadir}/glib-2.0/schemas
 mkdir -p %{buildroot}%{_bindir}
@@ -39,7 +39,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/skel/Desktop
 cp -a %{_builddir}/%{name}-%{version}/mimeapps-gnome.list %{buildroot}%{_datadir}/applications/
 install -m 0644 %{_builddir}/%{name}-%{version}/applications/* %{buildroot}/usr/local/share/applications/
 install -m 0644 %{_builddir}/%{name}-%{version}/applications-korora.menu %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
-cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/defaults/profile/prefs-gnome.js
+cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
 #install -m 0644 %{_builddir}/%{name}-%{version}/background-slideshow.xml %{buildroot}/%{_datadir}/backgrounds/abstract/background-1.xml
 #install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.sh %{buildroot}/%{_bindir}/switch-gnome-desktop.sh
 #install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.desktop %{buildroot}/%{_datadir}/applications/switch-gnome-desktop.desktop
@@ -88,7 +88,7 @@ gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults
 #set up default apps and firefox preferences
 cd %{_datadir}/applications/
 ln -sf mimeapps-gnome.list mimeapps.list
-cd %{_libdir}/firefox/defaults/profile/
+cd %{_libdir}/firefox/browser/defaults/profile/
 ln -sf prefs-gnome.js prefs.js
 
 #load gnome changes
@@ -104,7 +104,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 %files 
 %defattr(-,root,root,-)
 %{_datadir}/applications/mimeapps-gnome.list
-%{_libdir}/firefox/defaults/profile/prefs-gnome.js
+%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
 %{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
 /usr/local/share/applications
 #%{_datadir}/backgrounds/abstract/background-1.xml
@@ -116,7 +116,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
-* Fri Feb 15 2013 Chris Smart <firnsy@kororaproject.org> 0.6-2
+* Fri Feb 15 2013 Ian Firns <firnsy@kororaproject.org> 0.7-1
 - Added background picture-uri preference."
 
 * Thu Oct 25 2012 Chris Smart <csmart@kororaproject.org> 0.6-1
