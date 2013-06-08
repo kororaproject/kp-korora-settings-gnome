@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    1%{?dist}.1
+Release:    2%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -27,7 +27,7 @@ Provides:   kororaa-settings-gnome
 rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/applications/
 mkdir -p %{buildroot}/etc/skel/Desktop
-mkdir -p %{buildroot}/usr/local/share/applications/
+#mkdir -p %{buildroot}/usr/local/share/applications/
 mkdir -p %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged
 mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
 #mkdir -p %{buildroot}%{_datadir}/backgrounds/abstract
@@ -37,7 +37,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/skel/Desktop
 
 #repackage shared-mime-info instead?
 cp -a %{_builddir}/%{name}-%{version}/mimeapps-gnome.list %{buildroot}%{_datadir}/applications/
-install -m 0644 %{_builddir}/%{name}-%{version}/applications/* %{buildroot}/usr/local/share/applications/
+#install -m 0644 %{_builddir}/%{name}-%{version}/applications/* %{buildroot}/usr/local/share/applications/
 install -m 0644 %{_builddir}/%{name}-%{version}/applications-korora.menu %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
 cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
 #install -m 0644 %{_builddir}/%{name}-%{version}/background-slideshow.xml %{buildroot}/%{_datadir}/backgrounds/abstract/background-1.xml
@@ -63,28 +63,28 @@ rm -rf %{buildroot}
 
 %post
 #GNOME tweaks
-sudo -u gdm gconftool-2 --set --type string /apps/gdm/simple-greeter/logo_icon_name fedora-logo-sprite 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/gdm/simple-greeter/logo_icon_name fedora-logo-sprite 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/metacity/general/theme elementary 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/metacity/general/button_layout :minimize,maximize,close 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/interface/gtk_theme elementary 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/interface/icon_theme elementary 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/applications/browser/exec firefox 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/http/command "firefox %s"
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/https/command "firefox %s"
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/about/command "firefox %s"
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/applications/media/exec vlc 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/gnome-power-manager/ui/icon_policy always 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type int /desktop/gnome/peripherals/touchpad/scroll_method 2 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type bool /desktop/gnome/peripherals/touchpad/disable_while_typing true 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type bool /desktop/gnome/peripherals/touchpad/tap_to_click true 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/abstract/background-1.xml 2>/dev/null
-
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string  /desktop/gnome/shell/windows/button_layout :maximize,close 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/shell/windows/theme Elementary 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type boolean /desktop/gnome/shell/windows/edge_tiling true 2>/dev/null
-gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type boolean /apps/gnome-search-tool/show_additional_options true 2>/dev/null
-
+#sudo -u gdm gconftool-2 --set --type string /apps/gdm/simple-greeter/logo_icon_name fedora-logo-sprite 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/gdm/simple-greeter/logo_icon_name fedora-logo-sprite 2>/dev/null
+##gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/metacity/general/theme elementary 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/metacity/general/button_layout :minimize,maximize,close 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/interface/gtk_theme elementary 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/interface/icon_theme elementary 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/applications/browser/exec firefox 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/http/command "firefox %s"
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/https/command "firefox %s"
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/about/command "firefox %s"
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/applications/media/exec vlc 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/gnome-power-manager/ui/icon_policy always 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type int /desktop/gnome/peripherals/touchpad/scroll_method 2 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type bool /desktop/gnome/peripherals/touchpad/disable_while_typing true 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type bool /desktop/gnome/peripherals/touchpad/tap_to_click true 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/abstract/background-1.xml 2>/dev/null
+#
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string  /desktop/gnome/shell/windows/button_layout :maximize,close 2>/dev/null
+##gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/shell/windows/theme Elementary 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type boolean /desktop/gnome/shell/windows/edge_tiling true 2>/dev/null
+#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type boolean /apps/gnome-search-tool/show_additional_options true 2>/dev/null
+#
 #set up default apps and firefox preferences
 cd %{_datadir}/applications/
 ln -sf mimeapps-gnome.list mimeapps.list
@@ -106,7 +106,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 %{_datadir}/applications/mimeapps-gnome.list
 %{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
 %{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
-/usr/local/share/applications
+#/usr/local/share/applications
 #%{_datadir}/backgrounds/abstract/background-1.xml
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
 #%{_bindir}/switch-gnome-desktop.sh
@@ -116,6 +116,11 @@ glib-compile-schemas /usr/share/glib-2.0/schemas
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sun Jun 09 2013 Chris Smart <csmart@kororaproject.org> 0.7-2
+- Remove the extra desktop files we ship as they aren't needed now thanks 
+to GNOME 3 layout, remove old gconf settings, added extra default settings 
+such as delete in Files.
+
 * Fri Feb 15 2013 Ian Firns <firnsy@kororaproject.org> 0.7-1
 - Added background picture-uri preference."
 

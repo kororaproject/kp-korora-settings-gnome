@@ -12,9 +12,6 @@ icon-theme="elementary"
 menus-have-icons=true
 
 [org.gnome.nautilus.desktop]
-computer-icon-visible=true
-
-[org.gnome.nautilus.desktop]
 home-icon-visible=false
 
 [org.gnome.nautilus.desktop]
