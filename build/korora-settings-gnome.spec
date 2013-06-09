@@ -92,14 +92,14 @@ cd %{_libdir}/firefox/browser/defaults/profile/
 ln -sf prefs-gnome.js prefs.js
 
 #load gnome changes
-glib-compile-schemas /usr/share/glib-2.0/schemas
+glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 
 #set yelp to executable to remove gnome warning on shortcut
 #chmod a+x /usr/share/applications/gnome-yelp.desktop
 
 %postun
 #load gnome changes
-glib-compile-schemas /usr/share/glib-2.0/schemas
+glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 
 %files 
 %defattr(-,root,root,-)

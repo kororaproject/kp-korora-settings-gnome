@@ -52,3 +52,6 @@ enable-delete=true
 
 [org.gnome.desktop.wm.keybindings]
 show-desktop=['<Super>D']
+
+[org.gnome.settings-daemon.peripherals.mouse]
+locate-pointer=true
