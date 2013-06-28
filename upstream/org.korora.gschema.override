@@ -20,6 +20,9 @@ trash-icon-visible=false
 [org.gnome.nautilus.preferences]
 always-use-location-entry=true
 
+[org.gnome.nautilus.preferences]
+executable-text-activation=ask
+
 [org.gnome.settings-daemon.peripherals.touchpad]
 disable-while-typing=true
 
