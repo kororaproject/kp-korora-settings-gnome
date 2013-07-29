@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    3%{?dist}.2
+Release:    4%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -123,6 +123,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Mon Jul 29 2013 Chris Smart <csmart@kororaproject.org> 0.7-4
+- Disable mouse highlight and desktop icons as these cause problems in GNOME 3.8
+
 * Mon Jun 10 2013 Chris Smart <csmart@kororaproject.org> 0.7-3
 - Remove the mimeapps.lst file as we now ship shared-mime-info instead,
 remove menu file as we don't need to re-arrange things now either.

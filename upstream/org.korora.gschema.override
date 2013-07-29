@@ -1,5 +1,5 @@
 [org.gnome.desktop.background]
-show-desktop-icons=true
+show-desktop-icons=false
 picture-uri='file:///usr/share/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml'
 
 [org.gnome.desktop.interface]
@@ -39,7 +39,7 @@ show-date=true
 favorite-apps=['firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nautilus.desktop']
 
 [org.gnome.shell]
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'presentationmode@ampad.de', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'presentationmode@ampad.de', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'weather-extension@xeked.com']
 
 [org.gnome.shell]
 always-show-log-out=true
@@ -60,4 +60,4 @@ enable-delete=true
 show-desktop=['<Super>D']
 
 [org.gnome.settings-daemon.peripherals.mouse]
-locate-pointer=true
+locate-pointer=false
