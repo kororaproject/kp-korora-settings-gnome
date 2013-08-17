@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    4%{?dist}
+Release:    5%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -10,7 +10,7 @@ Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 #BuildArch: noarch
 
-Requires:   coreutils sed util-linux glib2 GConf2 gdm yelp
+Requires:   glib2 GConf2
 
 Obsoletes:  kororaa-settings-gnome
 Provides:   kororaa-settings-gnome
@@ -123,6 +123,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sun Aug 18 2013 Chris Smart <csmart@kororaproject.org> 0.7-5
+- Add "Software" to the side bar so it's easier for new users to add software
+
 * Mon Jul 29 2013 Chris Smart <csmart@kororaproject.org> 0.7-4
 - Disable mouse highlight and desktop icons as these cause problems in GNOME 3.8
 
