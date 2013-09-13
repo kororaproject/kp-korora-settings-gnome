@@ -87,10 +87,10 @@ icon-theme="elementary"
 button-layout=":minimize,maximize,close"
 
 [org.cinnamon]
-favorite-apps=['cinnamon-settings.desktop', 'firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nautilus.desktop']
+favorite-apps=['cinnamon-settings.desktop', 'firefox.desktop', 'mozilla-thunderbird.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nemo.desktop', 'gpk-application.desktop']
 
 [org.cinnamon]
-panel-launchers=['gnome-terminal.desktop', 'nautilus.desktop', 'firefox.desktop']
+panel-launchers=['firefox.desktop', 'mozilla-thunderbird.desktop', 'gnome-terminal.desktop', 'nemo.desktop']
 
 [org.cinnamon]
 desktop-layout="classic"
@@ -105,4 +105,4 @@ enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:panel-launc
 menu-icon="/usr/share/pixmaps/fedora-logo-sprite.svg"
 
 [org.cinnamon.background]
-picture-uri='file:///usr/share/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml'
+picture-uri="file:///usr/share/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml"
