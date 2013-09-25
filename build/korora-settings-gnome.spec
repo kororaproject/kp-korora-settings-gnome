@@ -1,7 +1,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    6%{?dist}.2
+Release:    7%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -123,6 +123,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Fri Sep 26 2013 Chris Smart <csmart@kororaproject.org> 0.7-7
+- Updated settings for Cinnamon 2.0
+
 * Fri Sep 06 2013 Chris Smart <csmart@kororaproject.org> 0.7-6
 - Add settings for Cinnamon and MATE desktop to overrides file
 

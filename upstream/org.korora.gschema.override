@@ -83,7 +83,7 @@ scroll-method=2
 [org.mate.interface]
 icon-theme="elementary"
 
-[org.cinnamon.overrides]
+[org.cinnamon.desktop.wm.preferences]
 button-layout=":minimize,maximize,close"
 
 [org.cinnamon]
@@ -104,5 +104,14 @@ enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:panel-launc
 [org.cinnamon]
 menu-icon="/usr/share/pixmaps/fedora-logo-sprite.svg"
 
-[org.cinnamon.background]
+[org.cinnamon.desktop.background]
 picture-uri="file:///usr/share/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml"
+
+[org.cinnamon.desktop.interface]
+icon-theme="elementary"
+
+[org.cinnamon.settings-daemon.peripherals.touchpad]
+disable-while-typing=true
+
+[org.cinnamon.settings-daemon.peripherals.touchpad]
+scroll-method=two-finger-scrolling
