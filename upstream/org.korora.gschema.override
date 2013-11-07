@@ -1,6 +1,9 @@
 [org.gnome.desktop.background]
 show-desktop-icons=false
-picture-uri='file:///usr/share/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml'
+picture-uri='file:///usr/share/backgrounds/korora/default-animated/korora.xml'
+
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/backgrounds/korora/default-animated/korora.xml'
 
 [org.gnome.desktop.interface]
 buttons-have-icons=true
@@ -72,7 +75,7 @@ desktop-opens-home-dir=true
 enable=true
 
 [org.mate.background]
-picture-filename="/usr/share/backgrounds/schroedinger-cat/default/schroedinger-cat.xml"
+picture-filename="/usr/share/backgrounds/korora/default/korora.xml"
 
 [org.mate.peripherals-touchpad]
 disable-while-typing=true
@@ -105,7 +108,7 @@ enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:panel-launc
 menu-icon="/usr/share/pixmaps/fedora-logo-sprite.svg"
 
 [org.cinnamon.desktop.background]
-picture-uri="file:///usr/share/backgrounds/schroedinger-cat/default-animated/schroedinger-cat.xml"
+picture-uri="file:///usr/share/backgrounds/korora/default-animated/korora.xml"
 
 [org.cinnamon.desktop.interface]
 icon-theme="elementary"
