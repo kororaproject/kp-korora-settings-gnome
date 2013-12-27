@@ -86,6 +86,9 @@ scroll-method=2
 [org.mate.interface]
 icon-theme="elementary"
 
+[org.cinnamon]
+overview-corner=['false:false:false','false:false:false','scale:true:false','expo:true:false']
+
 [org.cinnamon.desktop.wm.preferences]
 button-layout=":minimize,maximize,close"
 
@@ -96,10 +99,7 @@ favorite-apps=['cinnamon-settings.desktop', 'firefox.desktop', 'mozilla-thunderb
 panel-launchers=['firefox.desktop', 'mozilla-thunderbird.desktop', 'gnome-terminal.desktop', 'nemo.desktop']
 
 [org.cinnamon]
-desktop-layout="classic"
-
-[org.cinnamon]
-overview-corner-position="bottomRight"
+desktop-layout="flipped"
 
 [org.cinnamon]
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:2:panel-launchers@cinnamon.org:1', 'panel1:right:0:removable-drives@cinnamon.org:2', 'panel1:right:1:keyboard@cinnamon.org:3', 'panel1:right:2:settings@cinnamon.org:4', 'panel1:right:3:bluetooth@cinnamon.org:5', 'panel1:right:4:network@cinnamon.org:6', 'panel1:right:5:sound@cinnamon.org:7', 'panel1:right:6:power@cinnamon.org:8', 'panel1:right:7:systray@cinnamon.org:9', 'panel1:right:8:calendar@cinnamon.org:10','panel2:left:0:show-desktop@cinnamon.org:11', 'panel2:center:0:window-list@cinnamon.org:12', 'panel1:right:0:xrandr@cinnamon.org:13', 'panel1:right:0:brightness@cinnamon.org:14', 'panel1:right:0:notifications@cinnamon.org:15', 'panel1:right:0:workspace-switcher@cinnamon.org:16']
@@ -112,6 +112,12 @@ picture-uri="file:///usr/share/backgrounds/korora/default-animated/korora.xml"
 
 [org.cinnamon.desktop.interface]
 icon-theme="elementary"
+
+[org.cinnamon.desktop.interface]
+gtk-theme="Adwaita"
+
+[org.cinnamon.desktop.wm.preferences]
+theme="Adwaita"
 
 [org.cinnamon.settings-daemon.peripherals.touchpad]
 disable-while-typing=true
