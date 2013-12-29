@@ -1,3 +1,5 @@
+%define  debug_package %{nil}
+
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
