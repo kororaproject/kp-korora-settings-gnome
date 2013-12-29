@@ -123,4 +123,5 @@ theme="Adwaita"
 disable-while-typing=true
 
 [org.cinnamon.settings-daemon.peripherals.touchpad]
-scroll-method=two-finger-scrolling
+scroll-method="two-finger-scrolling"
+
