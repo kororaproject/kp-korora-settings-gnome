@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    8%{?dist}.1
+Release:    9%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Wed Mar 12 2014 Chris Smart <csmart@kororaproject.org> 0.7-9
+- Update mozilla default profile to support adblock-plus 2.5.1
+
 * Fri Dec 27 2013 Chris Smart <csmart@kororaproject.org> 0.7-8
 - Updated some more setting changes for Cinnamon
 - set desktop to flipped, fixed hotspots, fixed theme
