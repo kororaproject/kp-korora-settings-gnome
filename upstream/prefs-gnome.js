@@ -4,7 +4,7 @@ user_pref("extensions.lastSelectedSkin", "classic/1.0");
 user_pref("intl.accept_languages", "en-au,en-us,en");
 user_pref("browser.startup.homepage", "about:home");
 user_pref("extensions.pendingOperations", false);
-user_pref("extensions.adblockplus.currentVersion", "2.5.1");
+user_pref("extensions.adblockplus.currentVersion", "2.6");
 user_pref("extensions.blocklist.pingCountVersion", 0);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.databaseSchema", 14);

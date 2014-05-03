@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.7
-Release:    9%{?dist}
+Release:    10%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sat May 3 2014 Chris Smart <csmart@kororaproject.org> 0.7-10
+- Update mozilla default profile to support adblock-plus 2.6
+
 * Wed Mar 12 2014 Chris Smart <csmart@kororaproject.org> 0.7-9
 - Update mozilla default profile to support adblock-plus 2.5.1
 
