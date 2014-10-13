@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.7
-Release:    10%{?dist}
+Version:    0.7.1
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Tue Oct 14 2014 Ian Firns <firnsy@kororaproject.org> 0.7.1-1
+- Fixed issue adding applets to Cinnamon menu
+
 * Sat May 3 2014 Chris Smart <csmart@kororaproject.org> 0.7-10
 - Update mozilla default profile to support adblock-plus 2.6
 
