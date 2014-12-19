@@ -2,7 +2,7 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.8
+Version:    0.10
 Release:    1%{?dist}
 
 Group:      System Environment/Base
@@ -30,7 +30,7 @@ rm -rf %{buildroot}
 #mkdir -p %{buildroot}%{_datadir}/applications/
 #mkdir -p %{buildroot}/usr/local/share/applications/
 #mkdir -p %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged
-mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
+#mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
 #mkdir -p %{buildroot}%{_datadir}/backgrounds/abstract
 mkdir -p %{buildroot}%{_datadir}/glib-2.0/schemas
 mkdir -p %{buildroot}%{_bindir}
@@ -40,7 +40,7 @@ mkdir -p %{buildroot}%{_bindir}
 #cp -a %{_builddir}/%{name}-%{version}/mimeapps-gnome.list %{buildroot}%{_datadir}/applications/
 #install -m 0644 %{_builddir}/%{name}-%{version}/applications/* %{buildroot}/usr/local/share/applications/
 #install -m 0644 %{_builddir}/%{name}-%{version}/applications-korora.menu %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
-cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
+#cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
 #install -m 0644 %{_builddir}/%{name}-%{version}/background-slideshow.xml %{buildroot}/%{_datadir}/backgrounds/abstract/background-1.xml
 #install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.sh %{buildroot}/%{_bindir}/switch-gnome-desktop.sh
 #install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.desktop %{buildroot}/%{_datadir}/applications/switch-gnome-desktop.desktop
@@ -89,8 +89,8 @@ rm -rf %{buildroot}
 #set up default apps and firefox preferences
 #cd %{_datadir}/applications/
 #ln -sf mimeapps-gnome.list mimeapps.list
-cd %{_libdir}/firefox/browser/defaults/profile/
-ln -sf prefs-gnome.js prefs.js
+#cd %{_libdir}/firefox/browser/defaults/profile/
+#ln -sf prefs-gnome.js prefs.js
 
 #load gnome changes
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
@@ -103,17 +103,17 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 
 # clean up the link on uninstall of this package (not updates though)
-if [ "$1" == "0" ]
-then
-  cd %{_libdir}/firefox/browser/defaults/profile/
-  unlink prefs.js 2>/dev/null
-  cd -
-fi
+#if [ "$1" == "0" ]
+#then
+#  cd %{_libdir}/firefox/browser/defaults/profile/
+#  unlink prefs.js 2>/dev/null
+#  cd -
+#fi
 
 %files 
 %defattr(-,root,root,-)
 #%{_datadir}/applications/mimeapps-gnome.list
-%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
+#%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
 #%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
 #/usr/local/share/applications
 #%{_datadir}/backgrounds/abstract/background-1.xml
@@ -125,6 +125,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sat Dec 20 2014 Chris Smart <csmart@kororaproject.org> 0.10-1
+- Move firefox profile to korora-extras package.
+
 * Sat Dec 20 2014 Chris Smart <csmart@kororaproject.org> 0.8-1
 - Building for K21
 
