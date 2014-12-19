@@ -9,7 +9,10 @@ picture-uri='file:///usr/share/backgrounds/korora/default-animated/korora.xml'
 buttons-have-icons=true
 
 [org.gnome.desktop.interface]
-icon-theme="elementary"
+icon-theme="korora"
+
+[org.gnome.shell.extensions.user-theme]
+name="Korora"
 
 [org.gnome.desktop.interface]
 menus-have-icons=true

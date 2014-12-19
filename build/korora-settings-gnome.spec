@@ -2,7 +2,7 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.7.1
+Version:    0.8
 Release:    1%{?dist}
 
 Group:      System Environment/Base
@@ -125,6 +125,9 @@ fi
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sat Dec 20 2014 Chris Smart <csmart@kororaproject.org> 0.8-1
+- Building for K21
+
 * Tue Oct 14 2014 Ian Firns <firnsy@kororaproject.org> 0.7.1-1
 - Fixed issue adding applets to Cinnamon menu
 
