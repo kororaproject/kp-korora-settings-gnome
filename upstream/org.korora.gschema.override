@@ -117,7 +117,7 @@ menu-icon="/usr/share/pixmaps/fedora-logo-sprite.svg"
 picture-uri="file:///usr/share/backgrounds/korora/default-animated/korora.xml"
 
 [org.cinnamon.desktop.interface]
-icon-theme="elementary"
+icon-theme="korora"
 
 [org.cinnamon.desktop.interface]
 gtk-theme="Adwaita"
