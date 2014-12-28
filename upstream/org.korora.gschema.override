@@ -87,7 +87,7 @@ disable-while-typing=true
 scroll-method=2
 
 [org.mate.interface]
-icon-theme="elementary"
+icon-theme="korora"
 
 [org.cinnamon]
 overview-corner=['false:false:false','false:false:false','scale:true:false','expo:true:false']
