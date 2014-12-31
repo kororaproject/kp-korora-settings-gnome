@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.10
-Release:    2%{?dist}.1
+Release:    3%{?dist}.1
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Wed Dec 31 2014 Ian Firns <firnsy@kororaproject.org> 0.10-3
+- Enable dash-to-dock in Gnome
+
 * Sun Dec 28 2014 Chris Smart <csmart@kororaproject.org> 0.10-2
 - Cinnamon settings for Korora 21 release
 
