@@ -45,7 +45,7 @@ show-date=true
 favorite-apps=['firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'gnome-documents.desktop', 'nautilus.desktop', 'gpk-application.desktop']
 
 [org.gnome.shell]
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'weather-extension@xeked.com', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'weather-extension@xeked.com', 'dash-to-dock@micxgx.gmail.com', 'workspaces-to-dock@passingthru67.gmail.com']
 
 [org.gnome.shell]
 always-show-log-out=true
@@ -55,6 +55,15 @@ clock-show-date=true
 
 [org.gnome.shell.overrides]
 button-layout=':maximize,close'
+
+[org.gnome.shell.extensions.dash-to-dock]
+background-opacity=0.90000000000000002220
+dash-max-icon-size=32
+
+[org.gnome.shell.extensions.workspaces-to-dock]
+background-opacity=0.90000000000000002220
+intellihide=false
+workspace-caption-taskbar-icon-size=16
 
 [org.virt-manager.virt-manager]
 system-tray=true
