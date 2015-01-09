@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.10
-Release:    5%{?dist}
+Release:    6%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Fri Jan 9 2015 Chris Smart <csmart@kororaproject.org> 0.10-6
+- Touchpad: enable touch to click by default
+
 * Fri Jan 9 2015 Chris Smart <csmart@kororaproject.org> 0.10-5
 - Cinnamon fix: align open applications in taskbar to left in Cinnamon
 - Thanks leigh123linux

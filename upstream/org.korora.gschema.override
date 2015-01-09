@@ -38,6 +38,9 @@ disable-while-typing=true
 [org.gnome.settings-daemon.peripherals.touchpad]
 scroll-method='two-finger-scrolling'
 
+[org.gnome.settings-daemon.peripherals.touchpad]
+tap-to-click=true
+
 [org.gnome.shell.clock]
 show-date=true
 
@@ -95,6 +98,9 @@ disable-while-typing=true
 [org.mate.peripherals-touchpad]
 scroll-method=2
 
+[org.mate.peripherals-touchpad]
+tap-to-click=true
+
 [org.mate.interface]
 icon-theme="korora"
 
@@ -139,4 +145,7 @@ disable-while-typing=true
 
 [org.cinnamon.settings-daemon.peripherals.touchpad]
 scroll-method="two-finger-scrolling"
+
+[org.cinnamon.settings-daemon.peripherals.touchpad]
+tap-to-click=true
 
