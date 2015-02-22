@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.10
-Release:    6%{?dist}
+Version:    0.11
+Release:    2%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sun Feb 22 2015 Ian Firns <firnsy@kororaproject.org> 0.11-2
+- Updated MATE default in overrides.
+
 * Fri Jan 9 2015 Chris Smart <csmart@kororaproject.org> 0.10-6
 - Touchpad: enable touch to click by default
 

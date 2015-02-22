@@ -80,29 +80,50 @@ show-desktop=['<Super>D']
 [org.gnome.settings-daemon.peripherals.mouse]
 locate-pointer=false
 
-[org.mate.caja.preferences]
-enable-delete=true
-
-[org.mate.caja-open-terminal]
-desktop-opens-home-dir=true
-
 [org.mate.accessibility-keyboard]
 enable=true
 
 [org.mate.background]
 picture-filename="/usr/share/backgrounds/korora/default/korora.xml"
 
-[org.mate.peripherals-touchpad]
-disable-while-typing=true
+[org.mate.caja.desktop]
+computer-icon-visible=false
+home-icon-visible=false
+trash-icon-visible=false
+volumes-visible=false
 
-[org.mate.peripherals-touchpad]
-scroll-method=2
+[org.mate.caja-open-terminal]
+desktop-opens-home-dir=true
+
+[org.mate.caja.preferences]
+enable-delete=true
+
+[org.mate.desktop.session.required-components]
+windowmanager="compiz"
 
 [org.mate.peripherals-touchpad]
 tap-to-click=true
 
 [org.mate.interface]
+gtk-theme="Greybird"
 icon-theme="korora"
+
+[org.mate.NotificationDaemon]
+theme="coco"
+
+[org.mate.panel]
+default-layout="korora"
+
+[org.mate.peripherals-touchpad]
+disable-while-typing=true
+scroll-method=2
+
+[com.linuxmint.mintmenu]
+hide-applet-icon=true
+opacity=100
+
+[com.linuxmint.mintmenu.plugins.system_management]
+show-package-manager=false
 
 [org.cinnamon]
 overview-corner=['false:false:false','false:false:false','scale:true:false','expo:true:false']
