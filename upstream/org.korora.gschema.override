@@ -98,7 +98,7 @@ desktop-opens-home-dir=true
 [org.mate.caja.preferences]
 enable-delete=true
 
-[org.mate.desktop.session.required-components]
+[org.mate.session.required-components]
 windowmanager="compiz"
 
 [org.mate.peripherals-touchpad]
