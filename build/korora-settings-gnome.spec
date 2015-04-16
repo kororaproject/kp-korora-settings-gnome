@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.11
-Release:    2%{?dist}
+Release:    5%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -110,7 +110,7 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #  cd -
 #fi
 
-%files 
+%files
 %defattr(-,root,root,-)
 #%{_datadir}/applications/mimeapps-gnome.list
 #%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
@@ -125,7 +125,13 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
-* Sun Feb 22 2015 Ian Firns <firnsy@kororaproject.org> 0.11-2
+* Sun Apr 12 2015 Ian Firns <firnsy@kororaproject.org> 0.11-5
+- Added mouse theme override for MATE and revert compiz on MATE.
+
+* Sun Feb 22 2015 Ian Firns <firnsy@kororaproject.org> 0.11-3
+- Fixed compiz session requirements.
+
+* Sun Feb 22 2015 Ian Firns <firnsy@kororaproject.org> 0.11-1
 - Updated MATE default in overrides.
 
 * Fri Jan 9 2015 Chris Smart <csmart@kororaproject.org> 0.10-6
