@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.11
-Release:    5%{?dist}
+Version:    0.12
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sun Jun 14 2015 Ian Firns <firnsy@kororaproject.org> 0.12-1
+- Removed legacy cinnamon keys (thanks leigh123linux).
+
 * Sun Apr 12 2015 Ian Firns <firnsy@kororaproject.org> 0.11-5
 - Added mouse theme override for MATE and revert compiz on MATE.
 
