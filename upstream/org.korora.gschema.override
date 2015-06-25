@@ -1,9 +1,9 @@
 [org.gnome.desktop.background]
 show-desktop-icons=false
-picture-uri='file:///usr/share/backgrounds/korora/default-animated/korora.xml'
+picture-uri='file:///usr/share/backgrounds/korora/default/korora.xml'
 
 [org.gnome.desktop.screensaver]
-picture-uri='file:///usr/share/backgrounds/korora/default-animated/korora.xml'
+picture-uri='file:///usr/share/backgrounds/korora/default/korora.xml'
 
 [org.gnome.desktop.interface]
 buttons-have-icons=true
@@ -141,7 +141,7 @@ enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:show-deskto
 next-applet-id=17
 
 [org.cinnamon.desktop.background]
-picture-uri="file:///usr/share/backgrounds/korora/default-animated/korora.xml"
+picture-uri="file:///usr/share/backgrounds/korora/default/korora.xml"
 
 [org.cinnamon.desktop.interface]
 icon-theme="korora"
