@@ -152,9 +152,6 @@ icon-theme="korora"
 [org.cinnamon.desktop.interface]
 gtk-theme="Adwaita"
 
-[org.cinnamon.desktop.wm.preferences]
-theme="Adwaita"
-
 [org.cinnamon.settings-daemon.peripherals.touchpad]
 disable-while-typing=true
 
