@@ -132,9 +132,6 @@ overview-corner=['false:false:false','false:false:false','scale:true:false','exp
 favorite-apps=['cinnamon-settings.desktop', 'firefox.desktop', 'mozilla-thunderbird.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nemo.desktop', 'gpk-application.desktop']
 
 [org.cinnamon]
-panel-launchers=['firefox.desktop', 'mozilla-thunderbird.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop']
-
-[org.cinnamon]
 desktop-layout="flipped"
 
 [org.cinnamon]
