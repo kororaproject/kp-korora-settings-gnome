@@ -61,6 +61,7 @@ button-layout=':maximize,close'
 
 [org.gnome.shell.extensions.dash-to-dock]
 background-opacity=0.90000000000000002220
+custom-theme-running-dots=true
 dash-max-icon-size=32
 
 [org.gnome.shell.extensions.workspaces-to-dock]

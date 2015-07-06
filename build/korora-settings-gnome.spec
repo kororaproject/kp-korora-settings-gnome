@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.12
-Release:    2%{?dist}
+Release:    4%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -125,6 +125,13 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 #%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Sun Jun 28 2015 Ian Firns <firnsy@kororaproject.org> 0.12-4
+- Added extra tweaks to latest dash-to-dock.
+
+* Sun Jun 28 2015 Ian Firns <firnsy@kororaproject.org> 0.12-3
+- No Adwaita theme in cinnamon and panel overrides have moved
+  to json structures (thanks leigh123linux).
+
 * Fri Jun 26 2015 Ian Firns <firnsy@kororaproject.org> 0.12-2
 - Fixed default backgrounds to no longer use default-animated.
 
