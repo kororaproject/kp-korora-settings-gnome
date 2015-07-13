@@ -56,7 +56,7 @@ always-show-log-out=true
 [org.gnome.desktop.interface]
 clock-show-date=true
 
-[org.gnome.shell.overrides]
+[org.gnome.desktop.wm.preferences]
 button-layout=':maximize,close'
 
 [org.gnome.shell.extensions.dash-to-dock]
