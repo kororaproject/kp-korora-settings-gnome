@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.12
-Release:    4%{?dist}
+Release:    5%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -95,8 +95,8 @@ rm -rf %{buildroot}
 #load gnome changes
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 
-#set yelp to executable to remove gnome warning on shortcut
-#chmod a+x /usr/share/applications/gnome-yelp.desktop
+# XXX - dash-to-dock
+gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots true
 
 %postun
 #load gnome changes
