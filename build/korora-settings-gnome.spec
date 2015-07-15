@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.12
-Release:    5%{?dist}
+Release:    6%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -27,24 +27,8 @@ Provides:   kororaa-settings-gnome
 
 %install
 rm -rf %{buildroot}
-#mkdir -p %{buildroot}%{_datadir}/applications/
-#mkdir -p %{buildroot}/usr/local/share/applications/
-#mkdir -p %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged
-#mkdir -p %{buildroot}%{_libdir}/firefox/browser/defaults/profile
-#mkdir -p %{buildroot}%{_datadir}/backgrounds/abstract
 mkdir -p %{buildroot}%{_datadir}/glib-2.0/schemas
 mkdir -p %{buildroot}%{_bindir}
-#mkdir -p %{buildroot}%{_sysconfdir}/skel/Desktop
-
-#repackage shared-mime-info instead?
-#cp -a %{_builddir}/%{name}-%{version}/mimeapps-gnome.list %{buildroot}%{_datadir}/applications/
-#install -m 0644 %{_builddir}/%{name}-%{version}/applications/* %{buildroot}/usr/local/share/applications/
-#install -m 0644 %{_builddir}/%{name}-%{version}/applications-korora.menu %{buildroot}%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
-#cp -a %{_builddir}/%{name}-%{version}/prefs-gnome.js %{buildroot}%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
-#install -m 0644 %{_builddir}/%{name}-%{version}/background-slideshow.xml %{buildroot}/%{_datadir}/backgrounds/abstract/background-1.xml
-#install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.sh %{buildroot}/%{_bindir}/switch-gnome-desktop.sh
-#install -m 0755 %{_builddir}/%{name}-%{version}/switch-gnome-desktop.desktop %{buildroot}/%{_datadir}/applications/switch-gnome-desktop.desktop
-#ln -sf /usr/share/applications/switch-gnome-desktop.desktop %{buildroot}/etc/skel/Desktop/switch-gnome-desktop.desktop
 
 #gnome override
 install -m 0644 %{_builddir}/%{name}-%{version}/org.korora.gschema.override %{buildroot}%{_datadir}/glib-2.0/schemas/org.korora.gschema.override
@@ -63,68 +47,21 @@ rm -rf %{buildroot}
 %pre
 
 %post
-#GNOME tweaks
-#sudo -u gdm gconftool-2 --set --type string /apps/gdm/simple-greeter/logo_icon_name fedora-logo-sprite 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/gdm/simple-greeter/logo_icon_name fedora-logo-sprite 2>/dev/null
-##gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/metacity/general/theme elementary 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/metacity/general/button_layout :minimize,maximize,close 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/interface/gtk_theme elementary 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/interface/icon_theme elementary 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/applications/browser/exec firefox 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/http/command "firefox %s"
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/https/command "firefox %s"
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/url-handlers/about/command "firefox %s"
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/applications/media/exec vlc 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /apps/gnome-power-manager/ui/icon_policy always 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type int /desktop/gnome/peripherals/touchpad/scroll_method 2 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type bool /desktop/gnome/peripherals/touchpad/disable_while_typing true 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type bool /desktop/gnome/peripherals/touchpad/tap_to_click true 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/background/picture_filename /usr/share/backgrounds/abstract/background-1.xml 2>/dev/null
-#
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string  /desktop/gnome/shell/windows/button_layout :maximize,close 2>/dev/null
-##gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type string /desktop/gnome/shell/windows/theme Elementary 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type boolean /desktop/gnome/shell/windows/edge_tiling true 2>/dev/null
-#gconftool-2 --direct --config-source=xml:readwrite:/etc/gconf/gconf.xml.defaults --set --type boolean /apps/gnome-search-tool/show_additional_options true 2>/dev/null
-#
-#set up default apps and firefox preferences
-#cd %{_datadir}/applications/
-#ln -sf mimeapps-gnome.list mimeapps.list
-#cd %{_libdir}/firefox/browser/defaults/profile/
-#ln -sf prefs-gnome.js prefs.js
-
-#load gnome changes
+# reload changes
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
-
-# XXX - dash-to-dock
-gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots true
 
 %postun
-#load gnome changes
+# reload changes
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
-
-# clean up the link on uninstall of this package (not updates though)
-#if [ "$1" == "0" ]
-#then
-#  cd %{_libdir}/firefox/browser/defaults/profile/
-#  unlink prefs.js 2>/dev/null
-#  cd -
-#fi
 
 %files
 %defattr(-,root,root,-)
-#%{_datadir}/applications/mimeapps-gnome.list
-#%{_libdir}/firefox/browser/defaults/profile/prefs-gnome.js
-#%{_sysconfdir}/xdg/menus/applications-merged/applications-korora-gnome.menu
-#/usr/local/share/applications
-#%{_datadir}/backgrounds/abstract/background-1.xml
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
-#%{_bindir}/switch-gnome-desktop.sh
-#%{_datadir}/applications/switch-gnome-desktop.desktop
-#%{_sysconfdir}/skel/Desktop/switch-gnome-desktop.desktop
-#%{_sysconfdir}/skel/Desktop/Help-gnome.desktop
-#%{_datadir}/xsessions/gnome-fallback.desktop
 
 %changelog
+* Wed Jul 15 2015 Ian Firns <firnsy@kororaproject.org> 0.12-5
+- Cleaned up spec file.
+
 * Sun Jun 28 2015 Ian Firns <firnsy@kororaproject.org> 0.12-4
 - Added extra tweaks to latest dash-to-dock.
 

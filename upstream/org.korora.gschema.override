@@ -72,9 +72,6 @@ workspace-caption-taskbar-icon-size=16
 [org.virt-manager.virt-manager]
 system-tray=true
 
-[org.gnome.nautilus.preferences]
-enable-delete=true
-
 [org.gnome.desktop.wm.keybindings]
 show-desktop=['<Super>D']
 
