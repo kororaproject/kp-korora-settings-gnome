@@ -124,19 +124,12 @@ opacity=100
 show-package-manager=false
 
 [org.cinnamon]
-overview-corner=['false:false:false','false:false:false','scale:true:false','expo:true:false']
-
-[org.cinnamon]
-favorite-apps=['cinnamon-settings.desktop', 'firefox.desktop', 'mozilla-thunderbird.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nemo.desktop', 'gpk-application.desktop']
-
-[org.cinnamon]
 desktop-layout="flipped"
-
-[org.cinnamon]
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:left:1:show-desktop@cinnamon.org:11', 'panel1:left:2:panel-launchers@cinnamon.org:1', 'panel1:right:0:xrandr@cinnamon.org:13', 'panel1:right:1:brightness@cinnamon.org:14', 'panel1:right:2:notifications@cinnamon.org:15', 'panel1:right:3:removable-drives@cinnamon.org:2', 'panel1:right:4:workspace-switcher@cinnamon.org:16', 'panel1:right:5:keyboard@cinnamon.org:3', 'panel1:right:6:settings@cinnamon.org:4', 'panel1:right:7:bluetooth@cinnamon.org:5', 'panel1:right:8:network@cinnamon.org:6', 'panel1:right:9:sound@cinnamon.org:7', 'panel1:right:10:power@cinnamon.org:8', 'panel1:right:11:systray@cinnamon.org:9', 'panel1:right:12:calendar@cinnamon.org:10', 'panel1:left:3:window-list@cinnamon.org:12']
-
-[org.cinnamon]
+favorite-apps=['cinnamon-settings.desktop', 'firefox.desktop', 'mozilla-thunderbird.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nemo.desktop', 'gpk-application.desktop']
+overview-corner=['false:false:false','false:false:false','scale:true:false','expo:true:false']
 next-applet-id=17
+panels-enabled=['1:0:top']
 
 [org.cinnamon.desktop.background]
 picture-uri="file:///usr/share/backgrounds/korora/default/korora.xml"
