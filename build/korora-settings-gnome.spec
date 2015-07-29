@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.12
-Release:    6%{?dist}
+Version:    0.13
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -59,6 +59,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
 
 %changelog
+* Wed Jul 29 2015 Ian Firns <firnsy@kororaproject.org> 0.13-1
+- Added additional Mate overrides for workspaces.
+
 * Wed Jul 15 2015 Ian Firns <firnsy@kororaproject.org> 0.12-5
 - Cleaned up spec file.
 
