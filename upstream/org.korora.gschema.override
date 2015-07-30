@@ -152,3 +152,7 @@ scroll-method="two-finger-scrolling"
 [org.cinnamon.settings-daemon.peripherals.touchpad]
 tap-to-click=true
 
+[org.nemo.desktop]
+computer-icon-visible=false
+home-icon-visible=false
+trash-icon-visible=false

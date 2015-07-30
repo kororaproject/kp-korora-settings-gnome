@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.13
-Release:    1%{?dist}
+Release:    2%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -59,6 +59,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
 
 %changelog
+* Fri Jul 31 2015 Ian Firns <firnsy@kororaproject.org> 0.13-2
+- Added nemo overides to hide default icons from desktop.
+
 * Wed Jul 29 2015 Ian Firns <firnsy@kororaproject.org> 0.13-1
 - Added additional Mate overrides for workspaces.
 
