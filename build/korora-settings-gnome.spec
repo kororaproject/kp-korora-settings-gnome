@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.13
-Release:    2%{?dist}
+Release:    3%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -59,6 +59,9 @@ glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
 
 %changelog
+* Wed Nov 4 2015 Chris Smart <csmart@kororaproject.org> 0.13-3
+- Switch default backgrounds to Fedora supplemental wallpapers.
+
 * Fri Jul 31 2015 Ian Firns <firnsy@kororaproject.org> 0.13-2
 - Added nemo overides to hide default icons from desktop.
 

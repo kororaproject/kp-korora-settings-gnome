@@ -1,9 +1,9 @@
 [org.gnome.desktop.background]
 show-desktop-icons=false
-picture-uri='file:///usr/share/backgrounds/korora/default/korora.xml'
+picture-uri='file:///usr/share/backgrounds/korora/extras/korora-extras.xml'
 
 [org.gnome.desktop.screensaver]
-picture-uri='file:///usr/share/backgrounds/korora/default/korora.xml'
+picture-uri='file:///usr/share/backgrounds/korora/extras/korora-extras..xml'
 
 [org.gnome.desktop.interface]
 buttons-have-icons=true
@@ -82,7 +82,7 @@ locate-pointer=false
 enable=true
 
 [org.mate.background]
-picture-filename="/usr/share/backgrounds/korora/default/korora.xml"
+picture-filename="/usr/share/backgrounds/korora/extras/korora-extras.xml"
 
 [org.mate.caja.desktop]
 computer-icon-visible=false
@@ -135,7 +135,7 @@ next-applet-id=17
 panels-enabled=['1:0:top']
 
 [org.cinnamon.desktop.background]
-picture-uri="file:///usr/share/backgrounds/korora/default/korora.xml"
+picture-uri="file:///usr/share/backgrounds/korora/extras/korora-extras.xml"
 
 [org.cinnamon.desktop.interface]
 icon-theme="korora"
