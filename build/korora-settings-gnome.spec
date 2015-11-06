@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.13
-Release:    3%{?dist}.1
+Release:    3%{?dist}.2
 
 Group:      System Environment/Base
 License:    GPLv3+
