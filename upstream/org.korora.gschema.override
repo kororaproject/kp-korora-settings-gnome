@@ -23,6 +23,9 @@ home-icon-visible=false
 [org.gnome.nautilus.desktop]
 trash-icon-visible=false
 
+[org.gnome.nautilus.icon-view]
+default-zoom-level='small'
+
 [org.gnome.nautilus.preferences]
 always-use-location-entry=true
 
