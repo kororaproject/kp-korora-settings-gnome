@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.13
-Release:    4%{?dist}
+Version:    0.14
+Release:    1%{?dist}.2
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -12,7 +12,8 @@ Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 #BuildArch: noarch
 
-Requires(post):   glib2
+Requires:   hack-fonts
+Requires(post):   glib2 dconf
 
 Obsoletes:  kororaa-settings-gnome
 Provides:   kororaa-settings-gnome
@@ -29,10 +30,12 @@ Provides:   kororaa-settings-gnome
 rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_datadir}/glib-2.0/schemas
 mkdir -p %{buildroot}%{_bindir}
+mkdir -p %{buildroot}%{_sysconfdir}/dconf/db/local.d
 
 #gnome override
 install -m 0644 %{_builddir}/%{name}-%{version}/org.korora.gschema.override %{buildroot}%{_datadir}/glib-2.0/schemas/org.korora.gschema.override
 
+install -m 0644 00_korora_terminal %{buildroot}%{_sysconfdir}/dconf/db/local.d/00_korora_terminal
 #gnome fallback
 #install -m 0644 -D %{_builddir}/%{name}-%{version}/gnome-fallback.desktop %{buildroot}%{_datadir}/xsessions/gnome-fallback.desktop
 
@@ -49,16 +52,22 @@ rm -rf %{buildroot}
 %post
 # reload changes
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
+dconf update
 
 %postun
 # reload changes
 glib-compile-schemas /usr/share/glib-2.0/schemas 2>/dev/null
+dconf update
 
 %files
 %defattr(-,root,root,-)
 %{_datadir}/glib-2.0/schemas/org.korora.gschema.override
+%{_sysconfdir}/dconf/db/local.d/00_korora_terminal
 
 %changelog
+* Wed Feb 10 2016 Chris Smart <csmart@kororaproject.org> 0.14-1
+- Add Korora profile to GNOME terminal
+
 * Thu Nov 12 2015 Ian Firns <firnsy@kororaproject.org> 0.13-4
 - Added nautilus defaults to reduce icon size by default.
 

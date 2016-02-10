@@ -81,6 +81,10 @@ show-desktop=['<Super>D']
 [org.gnome.settings-daemon.peripherals.mouse]
 locate-pointer=false
 
+[org.gnome.Terminal.ProfilesList]
+list=['0c12e9be-5daf-4a7f-87f6-5510309dde55']
+default='0c12e9be-5daf-4a7f-87f6-5510309dde55'
+
 [org.mate.accessibility-keyboard]
 enable=true
 
