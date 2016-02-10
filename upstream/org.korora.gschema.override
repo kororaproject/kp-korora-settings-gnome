@@ -7,20 +7,15 @@ picture-uri='file:///usr/share/backgrounds/korora/extras/korora-extras.xml'
 
 [org.gnome.desktop.interface]
 buttons-have-icons=true
-
-[org.gnome.desktop.interface]
 icon-theme="korora"
+menus-have-icons=true
+clock-show-date=true
 
 [org.gnome.shell.extensions.user-theme]
 name="Korora"
 
-[org.gnome.desktop.interface]
-menus-have-icons=true
-
 [org.gnome.nautilus.desktop]
 home-icon-visible=false
-
-[org.gnome.nautilus.desktop]
 trash-icon-visible=false
 
 [org.gnome.nautilus.icon-view]
@@ -28,11 +23,7 @@ default-zoom-level='small'
 
 [org.gnome.nautilus.preferences]
 always-use-location-entry=true
-
-[org.gnome.nautilus.preferences]
 sort-directories-first=true
-
-[org.gnome.nautilus.preferences]
 executable-text-activation=ask
 
 [org.gnome.desktop.peripherals.touchpad]
@@ -42,17 +33,13 @@ tap-to-click=true
 [org.gnome.shell.clock]
 show-date=true
 
-[org.gnome.shell]
-favorite-apps=['firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'gnome-documents.desktop', 'nautilus.desktop', 'gpk-application.desktop']
-
-[org.gnome.shell]
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'weather-extension@xeked.com', 'dash-to-dock@micxgx.gmail.com', 'workspaces-to-dock@passingthru67.gmail.com']
+[org.gnome.desktop.privacy]
+report-technical-problems=false
 
 [org.gnome.shell]
 always-show-log-out=true
-
-[org.gnome.desktop.interface]
-clock-show-date=true
+favorite-apps=['firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'gnome-documents.desktop', 'nautilus.desktop', 'gpk-application.desktop']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'weather-extension@xeked.com', 'dash-to-dock@micxgx.gmail.com', 'workspaces-to-dock@passingthru67.gmail.com']
 
 [org.gnome.desktop.wm.preferences]
 button-layout=':maximize,close'
