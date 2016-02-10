@@ -35,13 +35,8 @@ sort-directories-first=true
 [org.gnome.nautilus.preferences]
 executable-text-activation=ask
 
-[org.gnome.settings-daemon.peripherals.touchpad]
-disable-while-typing=true
-
-[org.gnome.settings-daemon.peripherals.touchpad]
+[org.gnome.desktop.peripherals.touchpad]
 scroll-method='two-finger-scrolling'
-
-[org.gnome.settings-daemon.peripherals.touchpad]
 tap-to-click=true
 
 [org.gnome.shell.clock]
