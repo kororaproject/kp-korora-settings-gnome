@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.14
-Release:    1%{?dist}.3
+Version:    0.15
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -65,6 +65,9 @@ dconf update
 %{_sysconfdir}/dconf/db/local.d/00_korora_terminal
 
 %changelog
+* Fri May 13 2016 Chris Smart <csmart@kororaproject.org> 0.15-1
+- Korora 24
+
 * Wed Feb 10 2016 Chris Smart <csmart@kororaproject.org> 0.14-1
 - Add Korora profile to GNOME terminal
 

@@ -6,13 +6,14 @@ picture-uri='file:///usr/share/backgrounds/korora/extras/korora-extras.xml'
 picture-uri='file:///usr/share/backgrounds/korora/extras/korora-extras.xml'
 
 [org.gnome.desktop.interface]
+gtk-theme="Arc"
 buttons-have-icons=true
 icon-theme="korora"
 menus-have-icons=true
 clock-show-date=true
 
 [org.gnome.shell.extensions.user-theme]
-name="Korora"
+name="Arc"
 
 [org.gnome.nautilus.desktop]
 home-icon-visible=false
@@ -27,8 +28,12 @@ sort-directories-first=true
 executable-text-activation=ask
 
 [org.gnome.desktop.peripherals.touchpad]
+natural-scroll=false
 scroll-method='two-finger-scrolling'
 tap-to-click=true
+
+[org.gnome.desktop.privacy]
+report-technical-problems=false
 
 [org.gnome.shell.clock]
 show-date=true
@@ -62,6 +67,9 @@ show-desktop=['<Super>D']
 
 [org.gnome.settings-daemon.peripherals.mouse]
 locate-pointer=false
+
+[org.gnome.desktop.peripherals.mouse]
+natural-scroll=false
 
 [org.gnome.Terminal.ProfilesList]
 list=['0c12e9be-5daf-4a7f-87f6-5510309dde55']
