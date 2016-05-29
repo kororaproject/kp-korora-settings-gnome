@@ -43,7 +43,7 @@ report-technical-problems=false
 
 [org.gnome.shell]
 always-show-log-out=true
-favorite-apps=['firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'gnome-documents.desktop', 'nautilus.desktop', 'gpk-application.desktop']
+favorite-apps=['firefox.desktop', 'evolution.desktop', 'vlc.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'gnome-documents.desktop', 'nautilus.desktop', 'gpk-application.desktop', 'org.gnome.Terminal.desktop']
 enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xrandr-indicator@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'weather-extension@xeked.com', 'dash-to-dock@micxgx.gmail.com', 'workspaces-to-dock@passingthru67.gmail.com']
 
 [org.gnome.desktop.wm.preferences]
