@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.15
-Release:    1%{?dist}.1
+Release:    1%{?dist}.2
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -12,7 +12,7 @@ Source0:    %{name}-%{version}.tar.gz
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 #BuildArch: noarch
 
-Requires:   hack-fonts
+Requires:   hack-fonts arc-theme
 Requires(post):   glib2 dconf
 
 Obsoletes:  kororaa-settings-gnome

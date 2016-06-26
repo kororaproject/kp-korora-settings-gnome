@@ -75,6 +75,10 @@ natural-scroll=false
 list=['0c12e9be-5daf-4a7f-87f6-5510309dde55']
 default='0c12e9be-5daf-4a7f-87f6-5510309dde55'
 
+[org.freedesktop.Tracker.Miner.Files]
+index-on-battery=false
+index-on-battery-first-time=false
+
 [org.mate.accessibility-keyboard]
 enable=true
 
