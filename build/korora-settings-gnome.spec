@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.15
-Release:    2%{?dist}
+Release:    2%{?dist}.1
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -67,6 +67,7 @@ dconf update
 %changelog
 * Sun Jun 26 2016 Chris Smart <csmart@kororaproject.org> 0.15-2
 - Switch to upstream Numix icon theme
+- Ensure dash-to-dock dots are showing
 
 * Fri May 13 2016 Chris Smart <csmart@kororaproject.org> 0.15-1
 - Korora 24
