@@ -3,7 +3,7 @@
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
 Version:    0.15
-Release:    1%{?dist}.2
+Release:    2%{?dist}.1
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -65,6 +65,9 @@ dconf update
 %{_sysconfdir}/dconf/db/local.d/00_korora_terminal
 
 %changelog
+* Fri Jun 27 2016 Ian Firns <firnsy@kororaproject.org> 0.15-2
+- Ensure dash-to-dock dots are showing
+
 * Fri May 13 2016 Chris Smart <csmart@kororaproject.org> 0.15-1
 - Korora 24
 
