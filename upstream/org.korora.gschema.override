@@ -11,6 +11,7 @@ buttons-have-icons=true
 icon-theme="Numix-Circle"
 menus-have-icons=true
 clock-show-date=true
+cursor-theme="breeze_cursors"
 
 [org.gnome.shell.extensions.user-theme]
 name="Arc"
@@ -102,17 +103,18 @@ enable-delete=true
 tap-to-click=true
 
 [org.mate.interface]
-gtk-theme="Greybird"
+gtk-theme="Arc"
 icon-theme="Numix-Circle"
 
 [org.mate.Marco.general]
 num-workspaces=2
+theme="Arc"
 
 [org.mate.NotificationDaemon]
 theme="coco"
 
 [org.mate.peripherals-mouse]
-cursor-theme="Adwaita"
+cursor-theme="breeze_cursors"
 
 [org.mate.peripherals-touchpad]
 disable-while-typing=true
@@ -140,7 +142,14 @@ picture-uri="file:///usr/share/backgrounds/korora/extras/korora-extras.xml"
 icon-theme="Numix-Circle"
 
 [org.cinnamon.desktop.interface]
-gtk-theme="Adwaita"
+gtk-theme="Arc"
+cursor-theme="breeze_cursors"
+
+[org.cinnamon.desktop.wm.preferences]
+theme="Arc"
+
+[org.cinnamon.theme]
+name="Arc"
 
 [org.cinnamon.settings-daemon.peripherals.touchpad]
 disable-while-typing=true
