@@ -51,10 +51,12 @@ enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'xr
 button-layout=':maximize,close'
 
 [org.gnome.shell.extensions.dash-to-dock]
-custom-theme-running-dots=false
 background-opacity=1.0
+custom-theme-running-dots=true
 custom-theme-customize-running-dots=true
-custom-theme-running-dots-color='#5294E2'
+custom-theme-running-dots-color='#cfd6e6'
+custom-theme-running-dots-border-color='#5294e2'
+custom-theme-running-dots-border-width='1'
 
 [org.gnome.shell.extensions.workspaces-to-dock]
 background-opacity=0.90000000000000002220
