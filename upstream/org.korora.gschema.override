@@ -64,6 +64,13 @@ background-opacity=0.90000000000000002220
 intellihide=false
 workspace-caption-taskbar-icon-size=16
 
+[org.gnome.shell.extensions.wbe]
+brightness-and-contrast-set-brightness=-0.10
+blur=false
+brightness-and-contrast-set-contrast=-0.10
+desaturate-set-factor=0.10
+separate-blur-on-each-screen=true
+
 [org.virt-manager.virt-manager]
 system-tray=true
 
@@ -152,7 +159,7 @@ cursor-theme="breeze_cursors"
 theme="Arc"
 
 [org.cinnamon.theme]
-name="Arc"
+name="Arc-Dark"
 
 [org.cinnamon.settings-daemon.peripherals.touchpad]
 disable-while-typing=true
