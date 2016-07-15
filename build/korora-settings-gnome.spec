@@ -2,8 +2,8 @@
 
 Summary:    Korora configs for GNOME
 Name:       korora-settings-gnome
-Version:    0.15
-Release:    2%{?dist}.5
+Version:    0.16
+Release:    1%{?dist}
 
 Group:      System Environment/Base
 License:    GPLv3+
@@ -65,6 +65,10 @@ dconf update
 %{_sysconfdir}/dconf/db/local.d/00_korora_terminal
 
 %changelog
+* Fri Jul 15 2016 Chris Smart <csmart@kororaproject.org> 0.16-1
+- Mate fixes for Korora 24
+- Thanks to Oz for https://github.com/oz123/solarized-mate-terminal
+
 * Sun Jun 26 2016 Chris Smart <csmart@kororaproject.org> 0.15-2
 - Switch to upstream Numix icon theme
 - Ensure dash-to-dock dots are showing
