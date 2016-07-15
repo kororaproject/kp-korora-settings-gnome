@@ -112,11 +112,11 @@ enable-delete=true
 [org.mate.peripherals-touchpad]
 tap-to-click=true
 
-[org.mate.desktop.interface]
+[org.mate.interface]
 gtk-theme="Arc"
 icon-theme="Numix-Circle"
 
-[org.mate.marco.general]
+[org.mate.Marco.general]
 num-workspaces=2
 theme="Arc"
 
@@ -129,6 +129,10 @@ cursor-theme="breeze_cursors"
 [org.mate.peripherals-touchpad]
 disable-while-typing=true
 scroll-method=2
+
+[org.mate.terminal.global]
+default-profile='korora'
+profile-list=['default', 'korora']
 
 [com.linuxmint.mintmenu]
 hide-applet-icon=true
