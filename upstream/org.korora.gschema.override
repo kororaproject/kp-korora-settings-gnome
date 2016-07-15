@@ -112,11 +112,11 @@ enable-delete=true
 [org.mate.peripherals-touchpad]
 tap-to-click=true
 
-[org.mate.interface]
+[org.mate.desktop.interface]
 gtk-theme="Arc"
 icon-theme="Numix-Circle"
 
-[org.mate.Marco.general]
+[org.mate.marco.general]
 num-workspaces=2
 theme="Arc"
 
