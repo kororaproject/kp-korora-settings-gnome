@@ -134,6 +134,9 @@ scroll-method=2
 default-profile='korora'
 profile-list=['default', 'korora']
 
+[org.mate.panel.menubar]
+icon-name=/usr/share/pixmaps/fedora-logo-sprite.svg
+
 [com.linuxmint.mintmenu]
 hide-applet-icon=true
 opacity=100
